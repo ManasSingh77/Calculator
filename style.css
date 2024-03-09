@@ -1,0 +1,69 @@
+*{
+    background-color: blue;
+}
+body{
+    margin:200px 486px;
+    padding:20px;
+    padding-top: 15px;
+    border: 7px solid purple;
+    border-radius: 11px;
+    background-color: red;
+}
+h3{
+    background-color: red;
+}
+.display{
+    border:2px solid black;
+    flex-grow: 1;
+    margin-right: 2px;
+    padding: 20px;
+    /* padding-left: 208px; */
+    color:black;
+    border-radius: 11px;
+    background-color:white;
+    text-align: right;
+}
+.displaying{
+    display:flex;
+    margin-bottom: 5px;
+    background-color: red;
+}
+.keys{
+    display:flex;
+    border: none;
+    text-align: center;
+}
+button{
+    text-align: center;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: khaki;
+}
+#multiply{
+    padding-right:34px ;
+}
+#equalto{
+    padding-right: 34px;
+}
+#addition{
+    padding-right: 35px;
+}
+#clear{
+    padding-right: 33px;
+}
+@media (max-width: 1332px) {
+    body {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .calculator {
+        width: 100%; /* Makes the calculator width responsive */
+        max-width: 600px; /* Maximum width of calculator */
+    }
+
+    .display, button {
+        font-size: calc(1vw + 1vh + .5vmin); /* Adjust font size based on viewport */
+    }
+}
